@@ -8,16 +8,18 @@ import {
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const IconsContainer = styled.div`
-  width: 100%;
-  border-top: 1px solid grey;
+  width: 90%;
+  border-top: 1px solid ${(props) => props.theme.detail};
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding: 30px;
+  color: ${(props) => props.theme.socialIcon};
 `;
 
 const iconStyles = {
   fontSize: '46px',
+  
 };
 
 const Footer = () => {

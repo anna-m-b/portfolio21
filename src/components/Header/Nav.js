@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const NavContainer = styled.span`
+ 
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -11,9 +12,15 @@ const NavContainer = styled.span`
 `;
 
 const NavLink = styled.a`
+  color: ${(props) => props.theme.navLink};
+  &:hover {
+    color: ${(props) => props.theme.navLinkHover};
+  };
+  font-size: 1.3rem;
   text-decoration: none;
   cursor: pointer;
   margin: 10px;
+
 `;
 
 const Nav = () => {

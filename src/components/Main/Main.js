@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import About from './About';
 import Projects from './Projects';
-import Contact from '../Contact/Contact';
 
 const MainContainer = styled.div`
   margin: 20px 0;
@@ -14,7 +13,6 @@ const Main = () => {
     <MainContainer>
       <About />
       <Projects />
-    
     </MainContainer>
   );
 };

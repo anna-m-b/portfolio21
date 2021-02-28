@@ -1,22 +1,23 @@
 import styled from 'styled-components';
 
 const ProjectCardContainer = styled.div`
-  // border: 1px solid pink;
-  margin: 30px auto;
+  background-color: ${(props) => props.theme.cardBg};
+  margin: 25px auto 80px auto;
   width: 95%;
-  height: 500px;
+  height: 440px;
   display: grid;
   grid-template: repeat(12, 1fr) / 1.5fr 1fr;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: ${(props) => props.theme.cardShadow} 0px 1px 4px;
 `;
 
 const ProjectNameContainer = styled.div`
   grid-row: 1 / 3;
   grid-column: 1 / 3;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: ${(props) => props.theme.cardShadow} 0px 1px 4px;
 `;
 
 const ProjectName = styled.h1`
+  color: ${(props) => props.theme.cardTitle};
   margin-bottom: 0;
   padding: 0px 0px 10px 15px;
   width: 98%;
@@ -28,7 +29,7 @@ const ProjectImageContainer = styled.div`
   grid-row: 3 / 11;
   grid-column: 1 / 2;
   padding: 15px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: ${(props) => props.theme.cardShadow} 0px 1px 4px;
 `;
 
 const ProjectImage = styled.img``;
@@ -40,19 +41,27 @@ const ProjectLinksContainer = styled.span`
   align-items: center;
   grid-row: 11 / 13;
   // border: 1px solid blue;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: ${(props) => props.theme.cardShadow} 0px 1px 4px;
 `;
 
-const Link = styled.a``;
+const Link = styled.a`
+  color: ${(props) => props.theme.cardLink};
+  &:hover {
+    color: ${(props) => props.theme.cardLinkHover};
+  };
+  cursor: pointer;
+`;
 
 const ProjectTextContainer = styled.div`
   grid-row: 3 / 13;
   grid-column: 2 / 3;
   padding: 15px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: ${(props) => props.theme.cardShadow} 0px 1px 4px;
   //border: 1px solid red;
 `;
-const ProjectText = styled.p``;
+const ProjectText = styled.p`
+  color: ${(props) => props.theme.cardText};
+`;
 
 const ProjectCard = () => {
   return (
@@ -62,7 +71,7 @@ const ProjectCard = () => {
       </ProjectNameContainer>
 
       <ProjectImageContainer>
-        <ProjectImage src="https://via.placeholder.com/450x300" />
+        <ProjectImage src="https://via.placeholder.com/450x250" />
       </ProjectImageContainer>
       <ProjectLinksContainer>
         <Link>Github</Link>
