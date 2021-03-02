@@ -5,7 +5,7 @@ const AboutContainer = styled.div``;
 
 const AboutText = styled.p`
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 600;
   width: 80%;
   margin: 0px auto;
   color: ${(props) => props.theme.text};

@@ -6,7 +6,7 @@ const HeaderContainer = styled.div`
   // background-color: ${(props) => props.theme.headerBg};
   width: 100%;
   //max-height: 150px;
-  // border-bottom: 1px solid ${(props) => props.theme.detail};
+  border-bottom: 1px solid ${(props) => props.theme.detail};
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 4fr;

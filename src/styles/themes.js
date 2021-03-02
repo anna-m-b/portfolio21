@@ -76,7 +76,7 @@ export const blueOrange = {
   softOrange,
   deepYellow,
   lightCoral,
-  bg: '#fffafa',
+  bg: '#fffdfd',
   cardBg: '#ffffff9e',
   title: softOrange,
   text: teal,

@@ -18,7 +18,7 @@ const IconsContainer = styled.div`
 `;
 
 const Icon = styled(FontAwesomeIcon)`
-  font-size: 46px;
+  font-size: 42px;
   color: ${(props) => props.theme.socialIcon};
   &:hover {
    color: ${(props) => props.theme.socialOnHover}}
