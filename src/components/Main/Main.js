@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import About from './About';
 import Projects from './Projects';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 const MainContainer = styled.div`
   margin: 20px 0;
@@ -10,10 +11,16 @@ const MainContainer = styled.div`
 
 const Main = () => {
   return (
-    <MainContainer>
-      <About />
-      <Projects />
-    </MainContainer>
+    <Switch>
+      <MainContainer>
+        <Route exact path="/">
+          <About />
+        </Route>
+        <Route path="/projects">
+          <Projects />
+        </Route>
+      </MainContainer>
+    </Switch>
   );
 };
 

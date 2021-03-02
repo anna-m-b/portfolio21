@@ -4,7 +4,7 @@ import { Title } from '../../styles/styles';
 
 const ProjectsContainer = styled.div`
   //border: 1px solid green;
-  margin: 50px 0px 10px 0px;
+  margin: 0 auto;
 `;
 
 const Projects = () => {

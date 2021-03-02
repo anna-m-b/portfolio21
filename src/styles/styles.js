@@ -2,13 +2,12 @@ import styled from 'styled-components';
 
 export const Title = styled.h1`
   font-size: 36px;
-  letter-spacing: 2px;
+  margin: 20px auto;
+  width: 85%;
   color: ${(props) => props.theme.title};
+  background: ${(props) => props.theme.gradient};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
-export const Subheading = styled.h2`
-  font-size: 24px;
-  width: 80%;
-  margin: 25px auto;
-  color: ${(props) => props.theme.subheading};
-`;
+

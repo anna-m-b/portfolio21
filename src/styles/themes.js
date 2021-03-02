@@ -49,6 +49,42 @@ export const bert = {
   socialIcon: '#66FCF1',
 };
 
+export const warm = {
+  bg: '#f6f7f3',
+  navLink: '#4a6163',
+  navLinkHover: '#f9a66c',
+  title: '#f9a66c',
+  subheading: '#f9a66c',
+  text: '#4a6163',
+  detail: '#f9a66c',
+  cardBg: 'white',
+  cardTitle: '#f9a66c',
+  cardLink: '#f9a66c',
+  cardLinkHover: '#ffc94b',
+  cardText: '#4a6163',
+  cardShadow: '#4a6163',
+  socialIcon: '#f9a66c',
+};
 
+const teal = '#24849d';
+const softOrange = '#f9a66c';
+const deepYellow = '#ffc94b';
+const lightCoral = '#f17a7e';
 
-
+export const blueOrange = {
+  teal,
+  softOrange,
+  deepYellow,
+  lightCoral,
+  bg: '#fffafa',
+  cardBg: '#ffffff9e',
+  title: softOrange,
+  text: teal,
+  cardText: teal,
+  detail: teal,
+  socialIcon: teal,
+  socialOnHover: softOrange,
+  navLink: softOrange,
+  navLinkHover: lightCoral,
+  gradient: `linear-gradient(to right bottom, ${lightCoral} , ${softOrange} , ${deepYellow})`,
+};
